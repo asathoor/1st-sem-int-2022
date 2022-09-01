@@ -1,0 +1,27 @@
+/* place root variables here */
+:root {
+    --back: blue;
+    --pink: pink;
+    --grass: #58aa3f;
+    --redish: #aa3f58;
+    --white: #f6f7ef;
+}
+
+/* testing, testing ... */
+body {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, 
+footer {
+    background-color: var(--grass);
+    color: var(--pink);
+}
+
+#hi {
+    background-color: var(--redish);
+    color: var(--white);
+}
+
+
