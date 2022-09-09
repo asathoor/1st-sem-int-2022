@@ -1,13 +1,46 @@
-# Per's Boilerplate
+# 1st-sem-int-2022
 
-Here is a very basic HTML, CSS and JavaScript file structure. The HTML is linked to external CSS and JavaScript files. Basicly by now you're ready for more serious work.
+, CSS and JavaScript boilerplates and samples for the first semester internationall class 2022. 
 
-You will probably need to add an image folder, again in order to have a modular code.
+## Flexbox - gallery exercise
 
-# Usage
+### HTML
 
-* Download the code via Github Desktop, Gitkraken or similar tools.
-* Copy the boilerplate top level folder.
-* Paste the folder somewhere convenient. Then rename the folder in accordance with your intended project.
+~~~~
+ <section class="flexMe">
 
-/ Per
+            <!-- content here -->
+            <div class="green">
+                <h1>Pizza 13) Hawaii</h1>
+                <img src="images/plot.png" alt="whiskey plot" class="responsiveImg">
+                <p>133,- kr.</p>
+            </div>
+            <div class="green">
+                <h1>Pizza 14) Mascarpone</h1>
+                <img src="images/plot.png" alt="whiskey plot" class="responsiveImg">
+                <p>133,- kr.</p>
+            </div>
+            <div class="green">
+                <h1>Pizza 15) Papparazzi</h1>
+                <img src="images/plot.png" alt="whiskey plot" class="responsiveImg">
+                <p>133,- kr.</p>
+            </div>
+            <div class="green">
+                <h1>Pizza 16) Gorgonzola</h1>
+                <img src="images/plot.png" alt="whiskey plot" class="responsiveImg">
+                <p>133,- kr.</p>
+            </div>
+        </section>
+
+~~~~
+
+### CSS
+
+~~~~
+.flexMe {
+    display: flex;
+    flex-wrap: wrap;
+}
+~~~~
+
+
