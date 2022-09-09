@@ -2,15 +2,58 @@
  * file: styles.css
  **/
 
+ /* define: fonts, colors etc. */
+ :root {
+    /* colors */
+    --green: #8cffde;
+    --white: #ebdcdc;
+
+    /* fonts */
+    --reading: Arial, Helvetica, sans-serif;
+    --headings: "Times New Roman", Times, serif;
+  }
+
+body {
+    background-color: var(--green);
+    /* here we use the var below: */
+    font-family: var(--reading);
+}
+
+h1 {
+    font-family: var(--headings);
+}
+
  /* ids are called like this */
  #lorem {
-    background-color: deeppink;
-    width: 100px;
-    height: 100px;
+    background-color: var(--green);
+    width: 33%;
  }
+
+
+.responsiveImg {
+    width: 100%;
+    height: auto;
+}
+
+/* Flexbox sample */
+.flexMe {
+    display: flex;
+}
 
  .green {
     background-color: rgb(43, 217, 119);
-    width: 100px;
-    height: 100px; 
+    width: 33%;
+
+    /* margins */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* padding */
+    padding: 20px 20px 20px 20px;
+
+    /* border */
+    border: 10px solid rgb(133, 33, 33); 
+    border-radius: 33px;
  }
