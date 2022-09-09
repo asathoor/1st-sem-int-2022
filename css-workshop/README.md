@@ -1,6 +1,6 @@
 # 1st-sem-int-2022
 
-, CSS and JavaScript boilerplates and samples for the first semester internationall class 2022. 
+CSS and JavaScript boilerplates and samples for the first semester internationall class 2022. 
 
 ## Flexbox - gallery exercise
 
