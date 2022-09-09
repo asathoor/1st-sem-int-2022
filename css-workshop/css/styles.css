@@ -1,0 +1,16 @@
+/**
+ * file: styles.css
+ **/
+
+ /* ids are called like this */
+ #lorem {
+    background-color: deeppink;
+    width: 100px;
+    height: 100px;
+ }
+
+ .green {
+    background-color: rgb(43, 217, 119);
+    width: 100px;
+    height: 100px; 
+ }
