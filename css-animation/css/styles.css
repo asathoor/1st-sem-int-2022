@@ -27,6 +27,7 @@ body {
     50% {
         top: -300px;
         left: 567px;
+        transform: rotate(90deg);
     }
     100% {
         top: 600px;
