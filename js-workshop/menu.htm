@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #e0d4a6;
+        }
+
+        .hide {
+            display: none !important;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-right: 2rem;
+        }
+
+        #burger {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Menu sample</h1>
+
+    <nav>
+
+        <ul>
+            <li id="burger"></li>
+        </ul>
+        <ul id="subMenu">
+            <li>No One</li>
+            <li>Not at all</li>
+            <li>Gandalf</li>
+        </ul>
+
+    </nav>
+
+    <script>
+        burger.addEventListener('click', function () {
+            console.log("Ouch I was clicked, I was.")
+            //document.write("Ha! It's gone!")
+            subMenu.classList.toggle("hide")
+        })
+    </script>
+</body>
+
+</html>

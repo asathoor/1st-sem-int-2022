@@ -35,6 +35,7 @@ let theHTML = `
 
 document.getElementById("text").innerHTML = theHTML
 
+/*
 // functions
 let peterson = function () {
     console.log("So this is Xmas")
@@ -42,3 +43,28 @@ let peterson = function () {
 }
 
 peterson()
+*/
+
+const car = {
+    type: "Fiat",
+    model: "500",
+    color: "white"
+}
+
+const footer = { // properties
+    id: 1,
+    logo: "images/myLogo.png",
+    facebook: "https://facebook.com/babababalla",
+    copyrightInfo: "&copy; P. Jensen - Free Beer Licence 3.0"
+}
+
+document.getElementById("fooInfo").innerHTML = `
+    <div id="footerInfo">
+        <img src="${
+    footer.logo
+}" alt="My Image">
+        <p class="orange"> ${
+    footer.copyrightInfo
+} </p>
+    </div>
+`
