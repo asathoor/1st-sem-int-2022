@@ -1,0 +1,26 @@
+/**
+ * file: styles.css
+ **/
+.orange {
+    background-color: orange;
+}
+
+a {
+
+}
+
+a:hover {
+    color: pink;
+}
+
+#contactMe {
+    color:cadetblue;
+}
+
+.ginny {
+    color:chocolate;
+}
+
+#charles {
+    color:darkmagenta;
+}
