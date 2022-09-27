@@ -1,13 +1,7 @@
-# Per's Boilerplate
+# Video exercises
 
-Here is a very basic HTML, CSS and JavaScript file structure. The HTML is linked to external CSS and JavaScript files. Basicly by now you're ready for more serious work.
+Here are the files that was demonstrated in the class 27th september 2022. 
 
-You will probably need to add an image folder, again in order to have a modular code.
+In our experiments we used selected properties and methods for video objects in HTML and JavaScript.
 
-# Usage
-
-* Download the code via Github Desktop, Gitkraken or similar tools.
-* Copy the boilerplate top level folder.
-* Paste the folder somewhere convenient. Then rename the folder in accordance with your intended project.
-
-/ Per
+You learned how to create buttons that would control the video.
