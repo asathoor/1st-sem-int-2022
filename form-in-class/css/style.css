@@ -1,0 +1,27 @@
+/**
+ file: style.css
+**/
+
+.hideMe {
+    display:none;
+}
+
+.orange {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+}
+
+.groovyColors {
+    animation-name: picasso;
+    animation-duration: 4s;
+}
+
+@keyframes picasso {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+  }
