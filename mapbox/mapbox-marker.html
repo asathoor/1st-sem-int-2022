@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Attach a popup to a marker instance</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: relative;
+            /*
+            top: 0;
+            bottom: 0;
+            */
+            height: 567px;
+            width: 777px;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        #marker {
+            background-image: url('https://i0.wp.com/multimusen.dk/wp-content/uploads/cropped-cropped-cropped-multimusen-150-150-1.png?fit=150%2C133&ssl=1');
+
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .mapboxgl-popup {
+            max-width: 200px;
+        }
+    </style>
+    <h1>Hello World</h1>
+    <div id="map"></div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYXNhdGhvb3IiLCJhIjoiY2oyd3hlbzU3MDA5NzJxbm9iMjczanJndCJ9.HahDB7Z1rrD5THIYQh6t4g';
+
+        const monument = [10.8952, 56.4430];
+
+        const map = new mapboxgl.Map({
+            container: 'map',
+            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+            style: 'mapbox://styles/asathoor/cl9gqcmh2009n15l3vvk04fqd',
+            center: monument,
+            zoom: 15
+        });
+
+        // create the popup
+        const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+            'Hammelev centre of the universe!'
+        );
+
+        // create DOM element for the marker
+        const el = document.createElement('div');
+        el.id = 'marker';
+
+        // create the marker
+        new mapboxgl.Marker(el)
+            .setLngLat(monument)
+            .setPopup(popup) // sets a popup on this marker
+            .addTo(map);
+    </script>
+
+</body>
+
+</html>
