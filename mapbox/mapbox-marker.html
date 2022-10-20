@@ -26,11 +26,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-    </style>
-</head>
 
-<body>
-    <style>
         body {
             background-color: black;
             color: whitesmoke;
@@ -51,21 +47,33 @@
             max-width: 200px;
         }
     </style>
+</head>
+
+<body>
+
     <h1>Hello World</h1>
+
+    <!-- here the map will appear -->
     <div id="map"></div>
+
+    <p>In the X-class Thursday October 20th.</p>
 
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiYXNhdGhvb3IiLCJhIjoiY2oyd3hlbzU3MDA5NzJxbm9iMjczanJndCJ9.HahDB7Z1rrD5THIYQh6t4g';
 
-        // 55.24485/9.39066
+        // Hammelev geographical lngLat
         const monument = [9.39066, 55.24485];
 
+
         const map = new mapboxgl.Map({
+            // below: container will add the map data to an id
             container: 'map',
             // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
             style: 'mapbox://styles/asathoor/cl9gqcmh2009n15l3vvk04fqd',
+            // note that the const monument is used several times
             center: monument,
             zoom: 15
+            // you can add several other settings like bearing, skew and more
         });
 
         // create the popup
