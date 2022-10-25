@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Reservation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Horse Reservation</h1>
+    <div id="getHorse">
+        <h2>Horses</h2>
+    </div>
+
+    <script>
+        // a Horse Object
+
+        // new horse instance
+        let horse = {
+            "name": "Agatha",
+            "race": "Pony",
+            "booked": false,
+            "availale": function () {
+                if (this.booked == true) {
+                    return "Not available"
+                }
+                else {
+                    return "Available.<br> <button onclick='alert(\"OK! Booked\")'>Book</button>"
+                }
+            }
+        }
+
+        // console.log(horse.availale())
+        getHorse.innerHTML += "Horse: " + horse.name + " (" + horse.race + ")<br>"
+        getHorse.innerHTML += horse.availale()
+
+        /*
+        // brug onchange til at gemme i loc. storage
+        datepicker.addEventListener('change', function () {
+            //console.log(datepicker.value)
+            window.localStorage.setItem('agatha_' + datepicker.value, true)
+        })
+        */
+
+    </script>
+</body>
+
+</html>

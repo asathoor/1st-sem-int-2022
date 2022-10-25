@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: chocolate;
+    color:beige;
+    text-align: center;
+}
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35ch;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.calDay {
+    width: 56px;
+    height: 56px;
+    font-weight: 700;
+    font-size: large;
+    border: 2px solid blanchedalmond;
+    text-align: center;
+    padding-top: 24px;
+}   
