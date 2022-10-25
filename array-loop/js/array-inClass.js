@@ -30,4 +30,19 @@ result.innerHTML = myList.join("<br> ")
 myList.push("Imagine. (John Lennon)")
 myList.pop()
 myList.pop()
+
+// sort the array by .sort()
+myList.sort()
+
 result.innerHTML = myList.join("<br> ")
+
+/** LOOPS AND HOW USE THEM */
+// i++ means: i = i + 1
+for (let i = 1; i <= 1000; i++) {
+    console.log("I love coding: " + i)
+}
+
+for (let y = 0; y < myList.length; y++){
+    result.innerHTML += "<li class='orange'> Music: " + myList[y] + "</li>"
+}
+
