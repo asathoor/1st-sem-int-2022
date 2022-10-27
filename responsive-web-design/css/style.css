@@ -1,0 +1,43 @@
+/* Meyer reset */
+@import url("meyerReset.css");
+
+/* Remove margins */
+* {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+/* variables: add fonts, colors etc. here */
+:root {
+    
+}
+
+/* layout */
+#wrap {
+    min-height: 100vh;
+    background-color: cornsilk;
+}
+
+/* RESPONSIVE DESIGN: breakpoints */ 
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    #wrap {
+        background-color: aquamarine;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    body {
+        font-size: x-large;
+    }
+    #wrap {
+        background-color: aquamarine;
+        font-family: 'Courier New', Courier, monospace;
+    }
+  }
+
+  /** Add more breakpoints. Variation: both landscape and portrait mode ... */
