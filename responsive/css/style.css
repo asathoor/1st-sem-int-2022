@@ -1,0 +1,194 @@
+/**
+ * fil: css/style.css
+ **/
+
+/* Reset: Meyer Style */
+/* fjerner default browser styles */
+@import 'reset.css';
+
+/* Farve- og fontvariabler */
+:root {
+  /* farver */
+  --dark: #190604;
+  --white: #ffffff;
+  --brun: #a86c12;
+  --groen: #99a812;
+  --roed: #a82112;
+
+  /* fonte */
+  --overskrift: 'Brush Script MT', cursive;
+  --broedtekst: Helvetica, sans-serif;
+
+  /* whitespace */
+  --whitespace: .5rem;
+}
+
+/* Her bruges en variabel: --blue */
+body {
+  font-family: var(--broedtekst);
+  background-color: var(--brun);
+  color: var(--white);
+}
+
+/* Typografisk */
+h1,
+h2,
+h3 {
+  font-family: var(--overskrift);
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+}
+
+p {
+  margin-left: var(--whitespace);
+  margin-right: var(--whitespace);
+  padding-bottom: var(--whitespace);
+  font-size: 1.2em;
+  max-width: 35ch; /* undgå lange ulæselige linjer */
+}
+
+figcaption {
+  font-style: italic;
+  margin-left: var(--whitespace);
+  margin-right: var(--whitespace);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Wrap */
+#wrap {
+  min-height: 100vh;
+}
+
+/* Navigation and footer */
+nav,
+footer {
+  background-color: var(--dark);
+  padding: 35px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul,
+footer ul {
+  display: flex; /* horisontal menu */
+  justify-content: center;
+}
+
+nav ul li,
+footer ul li {
+  margin-right: 4ch;
+}
+
+nav a,
+footer {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  margin-bottom: 0px; /* fordi: nedarver 20px fra nav,footer */
+}
+
+/* Sections (højde == skærmhøjde) */
+section {
+  background-color: var(--roed);
+}
+
+/* Billeder */
+img {
+  width: 100%;
+}
+
+/* MOBILE FIRST (via Flexbox) */
+
+/* 1. Mobile enheder (begynd her) */
+@media only screen and (max-width: 320px) {
+  /* A. Giv baggrunden en farve */
+
+  /* === Menuen === */
+
+  /* B. vis burgeren */
+
+  /* C. Skjul menu og burgermenu */
+
+  /**
+   * Videre
+
+  Husk at man skal kunne navigere med fingrene:
+  D. Knapper
+  E. Links
+  F. Stor let læsbar font
+  G. Burgermenu (evt. med CSS animation)
+  */
+}
+
+/* 2. Tablets mv. (fortsæt her) */
+/*
+Research:
+* iPad width > 321px
+*/
+@media only screen and (min-width: 321px) {
+  /* Vælg en anden baggrundsfarve til tablets */
+
+  /* Flexbox: design efter skitser */
+
+  /* Menu */
+
+  /* 2.A. gør burgeren synlig */
+
+  /* 2.B Skjul menu og burgermenu */
+
+  /* --- Flexbox (responsivt flex) --- */
+
+  /* 2.C. Sæt main til flex, flex-wrap til wrap og gap på 10px */
+
+  /* 2.D Forklaring:
+
+  main > * betyder: for alle "børn" af main { ... css her  ...}
+  Se disse tutorials
+
+  @url: https://flexbox-pattern-cheatsheet.kevinpowell.co/
+  @url: https://www.w3schools.com/cssref/css3_pr_flex.asp
+
+  Prøv:
+
+  main > * {
+    flex: 1 1 32ch;
+  }
+   */
+
+  /*
+  Forkortelsen 'flex' kan sætte flere værdier på en gang.
+  Mere om anvendelsen af flex her:
+  @url: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+
+  Fx: Three values: flex-grow | flex-shrink | flex-basis
+  flex: 2 2 10%;
+
+  Alternativt bruges box sizing, se
+  @url: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+  */
+
+}
+
+/* 3. Stor skærm (slut her) */
+@media only screen and (min-width: 760px) {
+  /* 3.A.: Giv baggrunden en ny farve, sørg for en god kontrat til tekst. */
+
+  /* 3.B.: Skjul burgeren */
+
+  /* 3.C.: Vis menuen, og gør den horisontal */
+
+  /* 3.D.: #wrap må max fylde 80% og designet skal være centreret  */
+
+  /* 3.E.: Giv fuld bredde til øverste section */
+
+}
