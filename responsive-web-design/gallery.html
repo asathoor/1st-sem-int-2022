@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* large screens ... */
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #gallery img {
+            width: 300px;
+        }
+        
+        .hide {
+            display: none;
+        }
+
+        #burger {
+            display: none;
+        }
+
+        #desktopMenu {
+            display: flex;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }        
+
+        /* smaller devices */
+        @media screen and (max-width: 700px) {
+            #gallery img {
+                display: block;
+                width: 100%;
+            }
+            /* hide the desktop menu */
+            #desktopMenu {
+                display: none;
+            }
+            #burger {
+                font-size: 3rem;
+                display: block;
+            }
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- hide og big screens / display on small screens -->
+        <div id="burger">
+            <a href="menu.html">☰</a>
+        </div>
+
+        <!-- show on large screens / hide on small screens -->
+        <ul id="desktopMenu" class="hide">
+            <li>One</li>
+            <li>Two</li>
+        </ul>
+    </nav>
+    <div class="red"></div>
+    <div id="gallery">
+        <img src="images/moes.jpg" alt="">
+        <img src="images/moes.jpg" alt="">
+        <img src="images/moes.jpg" alt="">
+        <img src="images/moes.jpg" alt="">
+        <img src="images/moes.jpg" alt="">
+        <img src="images/moes.jpg" alt="">
+        <img src="images/moes.jpg" alt="">
+        <img src="images/moes.jpg" alt="">
+        <img src="images/moes.jpg" alt="">
+    </div>
+</body>
+</html>

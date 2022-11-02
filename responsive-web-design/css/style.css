@@ -20,24 +20,33 @@
     background-color: cornsilk;
 }
 
+#smallDev {
+    display: none;
+}
+
 /* RESPONSIVE DESIGN: breakpoints */ 
+
+/* tablet */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 600px) {
     /* For tablets: */
-    #wrap {
-        background-color: aquamarine;
+    body {
         font-family: Arial, Helvetica, sans-serif;
     }
 
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    body {
-        font-size: x-large;
-    }
     #wrap {
-        background-color: aquamarine;
-        font-family: 'Courier New', Courier, monospace;
+        background-color:darkorange;
+        background-image: url('../images/moes.jpg');
+        font-family: Arial, Helvetica, sans-serif;
     }
-  }
 
-  /** Add more breakpoints. Variation: both landscape and portrait mode ... */
+    #largeDev {
+        display: none;
+    }
+
+    h1 {
+        color: #fff;
+    }
+
+  }
+ 

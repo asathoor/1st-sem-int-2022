@@ -1,0 +1,32 @@
+a {
+    color:red;
+}
+
+/*
+img {
+    width: 100%;
+}
+*/
+
+.flex {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.rspImg {
+    width:100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: large;
+    }
+    a {
+        font-size: 3rem;
+        color:beige;
+        background-color: darkred;
+        display: block;
+        text-align: center;
+    }    
+}
