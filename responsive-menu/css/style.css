@@ -1,0 +1,28 @@
+body {
+  background-color: orange;
+}
+
+/* initial settings */
+#mobNav {
+  display: none;
+}
+
+/* menu page styles */
+#mobile {
+  background-color: #000;
+  color: #fff;
+}
+
+/* mobile devices @media */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: pink;
+    color: #000;
+  }
+  #mobNav {
+    display:block;
+  }
+  #bigNav {
+    display: none;
+  }
+}
